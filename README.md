@@ -41,7 +41,7 @@ Planned features:
 Compile the project with:
 
 ```bash
-g++ -Wall -Wextra -std=c++17 main.cpp task.cpp -o todo_list
+g++ -Wall -Wextra -std=c++17 main.cpp task.cpp file.cpp -o todo_list
 ```
 
 Run the application:

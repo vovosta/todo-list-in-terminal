@@ -30,8 +30,8 @@ Planned features:
 ├── main.cpp
 ├── task.cpp
 ├── task.h
-├── file.cpp   # Coming soon
-├── file.h     # Coming soon
+├── file.cpp   
+├── file.h     
 ├── LICENSE
 └── README.md
 ```

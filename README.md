@@ -12,11 +12,11 @@ Current features:
 * Display all tasks currently stored in memory
 * Interactive terminal menu
 * Modular project structure using multiple source and header files
+* Saves tasks to a file
+* Automatically load tasks at startup
 
 Planned features:
 
-* Save tasks to a file
-* Automatically load tasks at startup
 * Delete a task
 * Edit an existing task
 * Mark tasks as completed
@@ -30,13 +30,20 @@ Planned features:
 ├── main.cpp
 ├── task.cpp
 ├── task.h
-├── file.cpp   
-├── file.h     
+├── file.cpp
+├── file.h
+├── todo.txt
 ├── LICENSE
 └── README.md
 ```
 
 ## Build
+
+Before running the application for the first time, create an empty `todo.txt` file in the project's root directory. This file is used to store your tasks. Otherwise, the program won't be able to save or load your tasks.
+
+```bash
+touch todo.txt
+```
 
 Compile the project with:
 
@@ -50,11 +57,6 @@ Run the application:
 ./todo_list
 ```
 
-## Current Limitations
-
-At the moment, tasks are stored only in memory.
-
-This means that all tasks are lost when the program exits. File persistence will be implemented in a future version.
 
 ## Learning Objectives
 
@@ -65,8 +67,9 @@ This project is an opportunity to practice:
 * Header files
 * Project organization
 * `std::vector`
+* File handling with `std::fstream
 * User input handling
-* File input/output (coming soon)
+* File input/output
 * Git and GitHub workflow
 
 ## License

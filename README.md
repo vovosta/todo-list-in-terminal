@@ -67,7 +67,7 @@ This project is an opportunity to practice:
 * Header files
 * Project organization
 * `std::vector`
-* File handling with `std::fstream
+* File handling with `std::fstream`
 * User input handling
 * File input/output
 * Git and GitHub workflow

@@ -30,7 +30,23 @@ void delete_task(std::vector<std::string>& task){
 		std::cout << "The task " << index << " was deleted." << '\n';
 	}
 	else{
-		std::cout << "Wrong choice." << '\n';
+		std::cout << "Wrong choice. Try again." << '\n';
 	}
 
+}
+
+void edit_task(std::vector<std::string>& task){
+	std::size_t index;
+	std::cout << "Godd, wich task do you want to edit ? (Knowing that 0 = 1st task) : " << '\n';
+	std::cin >> index;
+	if (index < task.size()){
+		std::string new_task;
+		std::cout << "Write what you want to change : " << '\n';
+		std::getline(std::cin >> std::ws, new_task);
+		task[index] = new_task;
+		std::cout << "The task " << index << " was changed for " << new_task << "." << '\n';
+	}
+	else{
+		std::cout << "Wrong choice. Try again." << '\n';
+	}
 }

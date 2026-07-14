@@ -7,5 +7,6 @@
 void load_task(std::vector<std::string>& task);
 void save_task(std::vector<std::string>& task);
 void delete_task(std::vector<std::string>& task);
+void edit_task(std::vector<std::string>& task);
 
 #endif

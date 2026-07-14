@@ -14,10 +14,10 @@ Current features:
 * Modular project structure using multiple source and header files
 * Saves tasks to a file
 * Automatically load tasks at startup
+* Delete task
 
 Planned features:
 
-* Delete a task
 * Edit an existing task
 * Mark tasks as completed
 * Improve input validation

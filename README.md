@@ -15,13 +15,9 @@ Current features:
 * Saves tasks to a file
 * Automatically load tasks at startup
 * Delete task
+* Editing an existing file
 
-Planned features:
-
-* Edit an existing task
-* Mark tasks as completed
-* Improve input validation
-* Improve the user interface
+I'll maybe add other features in the future.
 
 ## Project Structure
 

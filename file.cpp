@@ -20,3 +20,17 @@ void save_task(std::vector<std::string>& task){
 	} 
 	file.close();
 }
+
+void delete_task(std::vector<std::string>& task){
+	std::size_t index;
+	std::cout << "Good, wich task do you want to delete ? (Knowing that 0 = 1st task) : " << '\n';
+	std::cin >> index;
+	if (index < task.size()){
+		task.erase(task.begin() + index);
+		std::cout << "The task " << index << " was deleted." << '\n';
+	}
+	else{
+		std::cout << "Wrong choice." << '\n';
+	}
+
+}

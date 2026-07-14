@@ -10,7 +10,8 @@ int main(){
 	std::cout << "1. Add task" << '\n';
 	std::cout << "2. Quit TODO LIST" << '\n';
 	std::cout << "3. Show all tasks in memory" << '\n';
-	std::cout << "Your choice (1 or 2 or 3) : ";
+	std::cout << "4. Delete task in memory" << '\n';
+	std::cout << "Your choice (1 or 2 or 3 or 4) : ";
 	std::cin >> choice;
 	switch (choice){
 		case 1:
@@ -22,6 +23,11 @@ int main(){
 		return 0;
 		case 3:
 			show_task(task);
+			break;
+		case 4:
+			show_task(task);
+			delete_task(task);
+			save_task(task);
 			break;
 		default:
 			std::cout << "Wrong choice. Try back.";

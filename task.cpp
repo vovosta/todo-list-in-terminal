@@ -13,6 +13,6 @@ void add_task(std::vector<std::string>& task){
 void show_task(std::vector<std::string>& task){
 	std::cout << "Here is everything : " << '\n';
 	for (std::size_t i = 0 ; i<task.size(); i++){
-	std::cout << i+1 << task[i] << '\n';
+	std::cout << i+1 << ". " <<  task[i] << '\n';
 	}
 }
